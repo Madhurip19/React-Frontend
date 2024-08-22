@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family:  'Copperplate', sans-serif;
+}
+
+.App,.Product, .Contact{
+  /* background-color: rgb(232, 192, 136); */
+  background-image: radial-gradient(yellow,#F27900);
+  background-size: cover;
+  position: static;
+  scroll-behavior: smooth;
+}
+
+.Nav h1{
+  border-radius: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+}
+
+
+.nav-links ul li::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgb(251 191 36);
+  margin: auto;
+  display: block;
+  transition: 0.6s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+ #Menu2{
+  height: 100vh;
+  top: 0;
+  border: 2px solid black;
+}
+.Menu ul{
+  height: 800px;
+}
+
+#Menu2{
+  background: linear-gradient(45deg, rgb(233, 148, 10), rgb(255, 115, 0));
+  width: 300px
+}
+
+.mainbg{
+  background-image: url('./images/Mainbg1.jpg');
+  background-size: cover;
+}
+.radient{
+  background: linear-gradient(to right,#ffe100 0%,#ff0800 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
